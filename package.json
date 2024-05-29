@@ -9,7 +9,7 @@
     "start": "next start",
     "lint": "next lint",
     "rm": "rm -rf docs",
-    "mv": "mv .next docs",
+    "mv": "mv .next/server/pages docs",
     "git": "git add . && git commit && git push origin master",
     "deploy": "npm run rm && npm run build && npm run mv && npm run git"
   },
