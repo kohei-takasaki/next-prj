@@ -2,11 +2,16 @@
   "name": "next-prj",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://kohei-takasaki.github.io/next-prj/",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "rm": "rm -rf docs",
+    "mv": "mv .next docs",
+    "git": "git add . && git commit && git push origin master",
+    "deploy": "npm run rm && npm run build && npm run mv && npm run git"
   },
   "dependencies": {
     "react": "^18",
